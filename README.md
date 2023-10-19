@@ -38,7 +38,7 @@ Follow these steps to set up the project:
 git clone https://github.com/Greyisheep/rent-predictor
 ```
 
-#### Creating a Python Virtual enviornment and activating [Optional]
+#### Setting up a Virtual Environment [Optional]
 
 #### Using Command Prompt (Windows)
 5. Create a Python virtual environment:
