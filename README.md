@@ -10,12 +10,11 @@
 4. [Goals](#goals)
 5. [Next Steps](#next-steps)
 6. [Contributing](#contributing)
-7. [Feedback](#feedback)
-8. [Happy Coding!!!](#happy-coding)
+7. [Happy Coding!!!](#happy-coding)
 
 ## Introduction
 
-This project is an open source apartment search and prediction web app for students in Nigeria. The app will allow students to search for apartments based on their budget and preferences, and it will also predict the rent price of apartments based on their features.
+This project is an open-source apartment search and prediction web app for students in Nigeria. The app will allow students to search for apartments based on their budget and preferences, and it will also predict the rent price of apartments based on their features.
 
 ## Setup
 
@@ -67,7 +66,7 @@ pip install -r requirements.txt
 ```
 
 ## Data
-If you want you're apartment to be displayed in our database. Kindly fill the following google form:
+If you want your apartment to be displayed in our database. Kindly fill out the following Google form:
 
 [Google Form Link](https://forms.gle/xHqq2mQ4yi1C6sTR8)
 
@@ -79,7 +78,7 @@ The data for this project is available in a Google Sheets spreadsheet. The sprea
 
 The goals of this project are to:
 
-* Create an open source apartment search and prediction web app for students in Nigeria.
+* Create an open-source apartment search and prediction web app for students in Nigeria.
 * Make it easier for students to find affordable apartments that meet their needs.
 * Help students to save money on rent.
 
