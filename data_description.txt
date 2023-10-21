@@ -1,0 +1,93 @@
+Name: Name of Lodge
+
+Rent: How much is rent (preferably next year rent if you know)?
+
+StrtName: What is the name of most popular lodge in that street?
+
+Storeys: How many storeys/floors does the lodge have? (The lodge you are filling for) 
+	1	1 storey
+	2	2 storeys
+	3	3 storeys
+	4	4 storeys
+
+Cheaperflrs: Are there some floors that are cheaper?
+	Yes	There are some floors that were cheaper
+	No	All floors are of the same price
+	I don't know	I don't know the cost difference if any per floor
+
+LgCond: What's the present condition of the lodge?
+	5	Excellent
+	4	Good
+	3	Average
+	2	Below Average
+	1	Poor
+
+Age: How old is the lodge? (Approximate in years)
+
+GenHouse: Is there a generator house for all the generators? (A place where all individual generators are kept)
+
+Parking: Can three cars park in comfortably?
+
+Distance: How many streets away from Eziobodo Road?
+
+Location: What area is the lodge located?
+
+RdCond: What is the state of the road leading to the lodge?
+	5	Excellent
+	4	Good
+	3	Average
+	2	Below Average
+	1	Poor
+
+SecurityLvl: Rate the security level of the lodge
+	5	Very Secure
+	4	Secure
+	3	Average Safety
+	2	Fairly Unsafe
+	1	Unsafe
+
+RmSize: Room Size
+	5	Big room
+	4	Above average size room
+	3	Average sized room
+	2	Below average sized room
+	1	Small room
+
+RmCond: What is the general condition of the rooms?
+	5	Excellent
+	4	Good
+	3	Average
+	2	Below Average
+	1	Poor
+
+Wdrobe: Is wardrobe area available?
+
+Finishing: Floor finishing
+	Tiles
+	Cement
+
+Balcony: Is there a separate balcony from kitchen?
+
+KitchenSize: What is the kitchen size?
+	5	Big kitchen
+	4	Above average size kitchen
+	3	Average sized kitchen
+	2	Below average sized kitchen
+	1	Small kitchen
+
+BathrmSize: What is the bathroom size?
+	5	Big bathroom
+	4	Above average size bathroom
+	3	Average sized bathroom
+	2	Below average sized bathroom
+	1	Small bathroom
+
+BalcnySize: What is the balcony size?
+	5	Big balcony
+	4	Above average size balcony
+	3	Average sized balcony
+	2	Below average sized balcony
+	1	Small balcony
+
+
+
