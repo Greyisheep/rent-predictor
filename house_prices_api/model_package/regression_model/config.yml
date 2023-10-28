@@ -6,17 +6,11 @@ training_data_file: train.csv
 test_data_file: test.csv
 
 # Variables
-# The variable we are attempting to predict (sale price)
+# The variable we are attempting to predict (Rent)
 target: Rent
 
 pipeline_name: regression_model
 pipeline_save_file: regression_model_output_v
-
-# Will cause syntax errors since they begin with numbers
-# variables_to_rename:
-#   1stFlrSF: FirstFlrSF
-#   2ndFlrSF: SecondFlrSF
-#   3SsnPorch: ThreeSsnPortch
 
 features:
   - Storeys
