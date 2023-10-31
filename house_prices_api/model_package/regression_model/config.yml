@@ -1,0 +1,93 @@
+# Package Overview
+package_name: regression_model
+
+# Data Files
+training_data_file: train.csv
+test_data_file: test.csv
+
+# Variables
+# The variable we are attempting to predict (Rent)
+target: Rent
+
+pipeline_name: regression_model
+pipeline_save_file: regression_model_output_v
+
+features:
+  - Storeys
+  - Cheaperflrs
+  - Electricity
+  - RefDisposal
+  - RunWater
+  - SecPost
+  - Cleaners
+  - LodgeGen
+  - Solar
+  - LgCond
+  - Age
+  - GenHouse
+  - Parking
+  - Distance
+  - Location
+  - RdCond
+  - SecurityLvl
+  - RmSize
+  - RmCond
+  - Wdrobe
+  - Finishing
+  - Balcony
+  - KitchenSize
+  - BathrmSize
+  - BalcnySize
+
+
+# set train/test split
+test_size: 0.3
+
+# to set the random seed
+random_state: 0
+
+alpha: 0.044
+
+# categorical variables with NA in train set
+numerical_vars_with_na:
+  - KitchenSize
+  - BathrmSize 
+  - BalcnySize
+
+# variables to map
+some_vars:
+  - Cheaperflrs
+  - Electricity 
+  - RefDisposal
+  - RunWater
+  - SecPost
+  - Cleaners
+  - LodgeGen
+  - Solar
+  - GenHouse
+  - Parking
+  - Wdrobe
+  - Balcony
+
+location_vars:
+  - Location
+
+finishing_vars:
+  - Finishing
+
+# variable mappings
+some_mappings:
+  No: 1
+  I don't know: 2
+  Yes: 3
+
+location_mappings:
+  Near Eziobodo Gate: 1
+  Near Sekani: 2
+  Around John Paul's Kitchen: 3 
+  Dombolo: 4
+  Eziobodo Elu: 5
+
+finishing_mappings:
+  Tiles: 1
+  Cement: 2
