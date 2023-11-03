@@ -10,7 +10,6 @@ import model_package.regression_model
 PACKAGE_ROOT = Path(model_package.regression_model.__file__).resolve().parent
 ROOT = PACKAGE_ROOT.parent
 CONFIG_FILE_PATH = PACKAGE_ROOT / "config.yml"
-DATASET_DIR = PACKAGE_ROOT / "datasets"
 TRAINED_MODEL_DIR = PACKAGE_ROOT / "trained_models"
 
 
@@ -20,8 +19,8 @@ class AppConfig(BaseModel):
     """
 
     package_name: str
-    training_data_file: str
-    test_data_file: str
+    # training_data_file: str
+    # test_data_file: str
     pipeline_save_file: str
 
 
@@ -38,9 +37,11 @@ class ModelConfig(BaseModel):
     alpha: float
     numerical_vars_with_na: List[str]
     some_vars: List[str]
+    more_vars: List[str]
     location_vars: List[str]
     finishing_vars: List[str]
     some_mappings: Dict[str, int]
+    more_mappings: Dict[bool, int]
     location_mappings: Dict[str, int]
     finishing_mappings: Dict[str, int]
 

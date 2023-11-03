@@ -22,13 +22,6 @@ class MultipleHouseDataInputs(BaseModel):
                        "StrtName": "Saint Nicholas",
                        "Storeys": 3,
                        "Cheaperflrs": "Yes",
-                       "Electricity": "No",
-                       "RefDisposal": "Yes",
-                       "RunWater": "Yes",
-                       "SecPost": "No",
-                       "Cleaners": "No",
-                       "LodgeGen": "No",
-                       "Solar": "No",
                        "LgCond": 3,
                        "Age": 4,
                        "GenHouse": "Yes",
@@ -44,7 +37,15 @@ class MultipleHouseDataInputs(BaseModel):
                        "Balcony": "Yes",
                        "KitchenSize": 3,
                        "BathrmSize": 3,
-                       "BalcnySize": 3
+                       "BalcnySize": 3,
+                       "RefDisposal": True,
+                       "LodgeGen": False,
+                       "SecPost": False,
+                       "Solar": False,
+                       "RunWater": True,
+                       "Cleaners": False,
+                       "Electricity": False,
+                       "ElecLodgeGen": False
                     }
                 ]
             }

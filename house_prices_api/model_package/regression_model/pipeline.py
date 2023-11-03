@@ -1,4 +1,3 @@
-from feature_engine.imputation import AddMissingIndicator
 from sklearn.linear_model import Lasso
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import MinMaxScaler
@@ -8,10 +7,6 @@ from model_package.regression_model.processing import features as pp
 
 price_pipe = Pipeline(
     [
-        (
-            "missing_indicator",
-            AddMissingIndicator(variables=config.model_config.numerical_vars_with_na),
-        ),
         (
             "mapper_some",
             pp.Mapper(
@@ -31,6 +26,13 @@ price_pipe = Pipeline(
             pp.Mapper(
                 variables=config.model_config.finishing_vars,
                 mappings=config.model_config.finishing_mappings,
+            ),
+        ),
+        (
+            "mapper_more",
+            pp.Mapper(
+                variables=config.model_config.more_vars,
+                mappings=config.model_config.more_mappings,
             ),
         ),
         ("scaler", MinMaxScaler()),

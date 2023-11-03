@@ -1,7 +1,7 @@
 import numpy as np
 from config.core import config
 from pipeline import price_pipe
-from processing.data_manager import load_dataset, save_pipeline
+from processing.data_manager import engineer_dataset, save_pipeline
 from sklearn.model_selection import train_test_split
 
 
@@ -9,7 +9,7 @@ def run_training() -> None:
     """Train the model."""
 
     # read training data
-    data = load_dataset(file_name=config.app_config.training_data_file)
+    data = engineer_dataset()
 
     # divide train and test
     X_train, X_test, y_train, y_test = train_test_split(

@@ -2,8 +2,10 @@
 package_name: regression_model
 
 # Data Files
-training_data_file: train.csv
-test_data_file: test.csv
+# training_data_file: train.csv
+# test_data_file: test.csv
+
+url: https://docs.google.com/spreadsheets/d/1l4Ea9PXEXv_GwcIWTORX_oK6TgZds7yTrek-fGLbJq8/gviz/tq?tqx=out:csv&sheet=Housing_in_Eziobodo
 
 # Variables
 # The variable we are attempting to predict (Rent)
@@ -15,13 +17,6 @@ pipeline_save_file: regression_model_output_v
 features:
   - Storeys
   - Cheaperflrs
-  - Electricity
-  - RefDisposal
-  - RunWater
-  - SecPost
-  - Cleaners
-  - LodgeGen
-  - Solar
   - LgCond
   - Age
   - GenHouse
@@ -38,7 +33,14 @@ features:
   - KitchenSize
   - BathrmSize
   - BalcnySize
-
+  - RefDisposal
+  - LodgeGen
+  - SecPost
+  - Solar
+  - RunWater
+  - Cleaners
+  - Electricity
+  - ElecLodgeGen
 
 # set train/test split
 test_size: 0.3
@@ -57,17 +59,20 @@ numerical_vars_with_na:
 # variables to map
 some_vars:
   - Cheaperflrs
-  - Electricity 
-  - RefDisposal
-  - RunWater
-  - SecPost
-  - Cleaners
-  - LodgeGen
-  - Solar
   - GenHouse
   - Parking
   - Wdrobe
   - Balcony
+
+more_vars:
+  - RefDisposal
+  - LodgeGen
+  - SecPost
+  - Solar
+  - RunWater
+  - Cleaners
+  - Electricity
+  - ElecLodgeGen
 
 location_vars:
   - Location
@@ -80,6 +85,11 @@ some_mappings:
   No: 1
   I don't know: 2
   Yes: 3
+
+more_mappings:
+  false: 1
+  true: 2
+
 
 location_mappings:
   Near Eziobodo Gate: 1

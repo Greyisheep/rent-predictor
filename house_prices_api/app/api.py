@@ -1,4 +1,4 @@
-# import json
+import json
 from typing import Any
 
 # import numpy as np
@@ -52,3 +52,33 @@ async def predict(input_data: schemas.MultipleHouseDataInputs) -> Any:
     logger.info(f"Prediction results: {results.get('predictions')}")
 
     return results
+
+
+# @api_router.post("/predict", response_model=schemas.PredictionResults, status_code=200)
+# async def predict(input_data: schemas.MultipleHouseDataInputs) -> Any:
+#     """
+#     Make house price predictions with the regression model
+#     """
+
+#     input_dicts = jsonable_encoder(input_data.inputs)
+    
+#     cleaned_input_dicts = []
+#     for input_dict in input_dicts:
+#         cleaned_input_dict = {k: v for k, v in input_dict.items() if v is not None}
+#         cleaned_input_dict = {k: v for k, v in cleaned_input_dict.items() if v is not None}
+#         if cleaned_input_dict:
+#             cleaned_input_dicts.append(cleaned_input_dict)
+
+#     if not cleaned_input_dicts:
+#         raise HTTPException(status_code=400, detail={"error": "No valid input data provided"})
+
+#     input_df = pd.DataFrame(cleaned_input_dicts)
+
+#     logger.info(f"Making prediction on inputs: {cleaned_input_dicts}")
+#     results = make_prediction(input_data=input_df)
+
+#     logger.info(f"Prediction results: {results.get('predictions')}")
+
+#     return results
+
+
