@@ -22,7 +22,6 @@ def drop_na_inputs(*, input_data: pd.DataFrame) -> pd.DataFrame:
     return validated_data
 
 class HouseDataInputSchema(BaseModel):
-    Name:           Optional[str]
     StrtName:       Optional[str]
     Storeys:        Optional[int]
     Cheaperflrs:    Optional[str]
