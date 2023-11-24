@@ -3,7 +3,7 @@ from typing import Generator
 import pandas as pd
 import pytest
 from fastapi.testclient import TestClient
-from model_package.regression_model.processing.data_manager import engineer_dataset
+from house_prices_api.model_package.regression_model.processing.data_manager import engineer_dataset
 
 from app.main import app
 
