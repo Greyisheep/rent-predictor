@@ -1,6 +1,6 @@
 from sklearn.linear_model import Lasso
 from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import MinMaxScaler
+# from sklearn.preprocessing import MinMaxScaler
 
 from model_package.regression_model.config.core import config
 from model_package.regression_model.processing import features as pp
@@ -35,7 +35,7 @@ price_pipe = Pipeline(
                 mappings=config.model_config.more_mappings,
             ),
         ),
-        ("scaler", MinMaxScaler()),
+        # ("scaler", MinMaxScaler()),
         (
             "Lasso",
             Lasso(

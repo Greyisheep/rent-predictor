@@ -1,13 +1,12 @@
 from typing import Any
 
 import pandas as pd
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter
 from fastapi.encoders import jsonable_encoder
 from loguru import logger
-from model_package.regression_model.predict import make_prediction
 
 from app import schemas
-from app.config import settings
+from model_package.regression_model.predict import make_prediction
 
 api_router = APIRouter()
 
