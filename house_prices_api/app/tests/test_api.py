@@ -14,7 +14,7 @@ def test_make_prediction(client: TestClient, test_data: pd.DataFrame) -> None:
 
     # When
     response = client.post(
-        "http://localhost:8001/api/v1/predict",
+        "/api/v1/predict",
         json=payload,
     )
 
