@@ -1,4 +1,5 @@
-# Rent Predictor: An Open Source Apartment Search and Prediction Web App for Students in Nigeria
+# Rent Predictor
+This project helps people get started with pen source by makin contribution easier, but yet following best prectices as it is a relatable project. Rent predictor looks to help students with apartment serach as it provides search functions as well as easily accessible databases in form of spreadsheets. The model package gives in sights on prices of apartments in different areas to help students get an idea of what apartment prices in differnt areas are helping the student streamline their search location. As the data collection is open-source, it is easily accessible, usable and verifiable by the end users.
 
 ## Table of Contents
 
@@ -106,9 +107,7 @@ We hope you enjoy working on this project!
 
 
 ---
-
-
-Creating an effective and well-organized README.md file is crucial for any project. A good README.md can help users and collaborators understand your project, how to use it, and how to contribute. Here are some best practices for writing a README.md:
+## If you see this, it means you are an awesome person, showing interest in this project. This README.md file is undergoing a reconstruction to keep it up to date, hence its minor discontinuity.
 
 1. **Title and Description:**
    - Start with a clear and concise title for your project.
