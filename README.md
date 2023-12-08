@@ -13,6 +13,16 @@ This project helps people get started with pen source by makin contribution easi
 6. [Contributing](#contributing)
 7. [Happy Coding!!!](#happy-coding)
 
+## Built with
+![FastAPI](https://img.shields.io/badge/FastAPI-grey?logo=fastapi&logoColor=white&color=%23007a6c&link=https%3A%2F%2Ffastapi.tiangolo.com%2F)
+![NumPy](https://img.shields.io/badge/NumPy-%234d77cf?logo=numpy&logoColor=white&link=https%3A%2F%2Fnumpy.org%2F)
+![pandas](https://img.shields.io/badge/pandas-%236f42c1?logo=pandas&logoColor=white&link=https%3A%2F%2Fpandas.pydata.org%2F)
+![Pydantic](https://img.shields.io/badge/Pydantic-%23e92063?logo=pydantic&logoColor=white&link=https%3A%2F%2Fdocs.pydantic.dev%2Flatest%2F)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23FF9C34?logo=scikitlearn&logoColor=white&link=https%3A%2F%2Fscikit-learn.org%2Fstable%2F)
+![pytest](https://img.shields.io/badge/pytest-rgb(0%2C%20159%2C%20227)?logo=pytest&logoColor=white&link=https%3A%2F%2Fdocs.pytest.org%2Fen%2F7.4.x%2F)
+![React](https://img.shields.io/badge/React-%23087ea4?logo=react&logoColor=white&link=https%3A%2F%2Freact.dev%2F)
+![JavaScript](https://img.shields.io/badge/JavaScript-yellow?logo=javascript&logoColor=white&link=https%3A%2F%2Fwww.javascript.com%2F)
+
 ## Introduction
 
 This project is an open-source apartment search and prediction web app for students in Nigeria. The app will allow students to search for apartments based on their budget and preferences, and it will also predict the rent price of apartments based on their features.
