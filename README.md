@@ -14,6 +14,8 @@ This project helps people get started with pen source by makin contribution easi
 7. [Happy Coding!!!](#happy-coding)
 
 ## Built with
+![python](https://img.shields.io/badge/python-%232b5b84?logo=python&logoColor=white&link=https%3A%2F%2Fwww.python.org%2F)
+![jupyter](https://img.shields.io/badge/jupyter-%23e46e2e?logo=jupyter&logoColor=white&link=https%3A%2F%2Fjupyter.org%2F)
 ![FastAPI](https://img.shields.io/badge/FastAPI-grey?logo=fastapi&logoColor=white&color=%23007a6c&link=https%3A%2F%2Ffastapi.tiangolo.com%2F)
 ![NumPy](https://img.shields.io/badge/NumPy-%234d77cf?logo=numpy&logoColor=white&link=https%3A%2F%2Fnumpy.org%2F)
 ![pandas](https://img.shields.io/badge/pandas-%236f42c1?logo=pandas&logoColor=white&link=https%3A%2F%2Fpandas.pydata.org%2F)
