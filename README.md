@@ -166,5 +166,3 @@ We hope you enjoy working on this project!
 
 18. **Badge for Build Status:**
     - If your project has continuous integration, display a badge for the build status (e.g., Travis CI, CircleCI).
-
-Remember, clarity and completeness are key. Aim to make your README a one-stop reference for anyone interested in your project. Regularly update it as your project evolves and new features are added.
