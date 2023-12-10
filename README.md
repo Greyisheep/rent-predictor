@@ -28,55 +28,62 @@ This project helps people get started with pen source by makin contribution easi
 ## License
 [![License: LGPL v2.1](https://img.shields.io/badge/License-LGPL_v2.1-blue.svg)](https://www.gnu.org/licenses/lgpl-2.1)
 
-## Introduction
+## Installation
 
-This project is an open-source apartment search and prediction web app for students in Nigeria. The app will allow students to search for apartments based on their budget and preferences, and it will also predict the rent price of apartments based on their features.
-
-## Setup
+Follow these steps to set up and run rent-predictor on your local machine.
 
 ### Prerequisites
-Before setting up the project, ensure you have the following tools and software installed on your system:
 
-- [Git](https://git-scm.com/downloads)
-- [Python 3](https://www.python.org/downloads/)
-- [pip](https://pip.pypa.io/en/stable/installing/) (Python package manager)
+Make sure you have the following installed on your system:
+
+- [Python](https://www.python.org/downloads/) (version 3.7 or higher)
+- [pip](https://pip.pypa.io/en/stable/installation/) (Python package installer)
+
+**Optional (The README is written with this set of Prerequisites in mind)**
+
+- [git](https://git-scm.com/downloads) (Distributed Version Control System, and terminal)
+- [VSCode](https://code.visualstudio.com/download) (integrated development environment)
 
 
-### Project Setup
-Follow these steps to set up the project:
+### Clone the Repository
 
-1. Create a directory for the project if it does not already exist.
-2. Open a bash terminal.
-3. Navigate to the directory where you want to clone the project.
-4. Clone the repo:
+1. Open the git bash terminal by searching for it
+2. [Navigate to choice of location for project](https://www.nobledesktop.com/learn/git/command-line-basics#:~:text=Commands%20such%20as%20cd%20are,the%20contents%20of%20a%20folder.)
+3. Clone the repository with:
+
 ```bash
 git clone https://github.com/Greyisheep/rent-predictor
+cd rent-predictor
 ```
 
-#### Setting up a Virtual Environment [Optional]
 
-#### Using Command Prompt (Windows)
-5. Create a Python virtual environment:
+### Create a Virtual Environment
+
+4. Type `code .` and hit `enter` button; this takes you to vscode
+5. In vscode, press `ctrl` + ` ; which opens up a terminal, [navigate to the gitbash terminal](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git#:~:text=If%20you%20want%20to%20set,be%20opened%20with%20Git%20Bash.)
+6. Create a Virtual Environment with:
+
+
 ```bash
 python -m venv venv
 ```
-6. Activate the virtual environment:
+
+### Activate the Virtual Environment
+
+#### For Windows:
+
 ```bash
-venv\Scripts\activate
+source venv/Scripts/activate
 ```
 
-#### Using Bash Terminal (MacOS/Linux)
-5. Create a Python virtual environment:
-```bash
-python3 -m venv venv
-```
-6. Activate the virtual environment:
+#### For MacOS/Linux:
+
 ```bash
 source venv/bin/activate
 ```
 
+### Install Dependencies
 
-7. Install all requirements:
 ```bash
 pip install -r requirements.txt
 ```
