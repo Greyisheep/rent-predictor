@@ -25,6 +25,9 @@ This project helps people get started with pen source by makin contribution easi
 ![React](https://img.shields.io/badge/React-%23087ea4?logo=react&logoColor=white&link=https%3A%2F%2Freact.dev%2F)
 ![JavaScript](https://img.shields.io/badge/JavaScript-yellow?logo=javascript&logoColor=white&link=https%3A%2F%2Fwww.javascript.com%2F)
 
+## License
+[![License: LGPL v2.1](https://img.shields.io/badge/License-LGPL_v2.1-blue.svg)](https://www.gnu.org/licenses/lgpl-2.1)
+
 ## Introduction
 
 This project is an open-source apartment search and prediction web app for students in Nigeria. The app will allow students to search for apartments based on their budget and preferences, and it will also predict the rent price of apartments based on their features.
