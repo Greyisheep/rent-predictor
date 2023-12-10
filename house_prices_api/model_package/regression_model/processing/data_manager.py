@@ -1,3 +1,12 @@
+import os
+import sys
+
+# Add the project's root directory to sys.path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+
+# print(sys.path)
+
+
 import typing as t
 from pathlib import Path
 

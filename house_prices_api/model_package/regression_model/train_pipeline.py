@@ -1,5 +1,18 @@
-import numpy as np
+import sys
+import os
+
+# Add the project's root directory to sys.path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+# sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '')))
+
+# print(sys.path)
+
+# Now, you should be able to import the module
 from config.core import config
+
+
+import numpy as np
+# from regression_model.config.core import config
 from pipeline import price_pipe
 from processing.data_manager import engineer_dataset, save_pipeline
 from sklearn.model_selection import train_test_split

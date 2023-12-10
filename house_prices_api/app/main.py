@@ -1,3 +1,12 @@
+import sys
+import os
+
+# Add the regression_model directory to sys.path
+# sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'model_package')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+# print(sys.path)
+
 from typing import Any
 
 from fastapi import APIRouter, FastAPI, Request

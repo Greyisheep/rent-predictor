@@ -2,8 +2,7 @@ from typing import List, Optional
 
 from pydantic import BaseModel
 
-from model_package.regression_model.processing.validation import \
-    HouseDataInputSchema
+from model_package.regression_model.processing.validation import HouseDataInputSchema
 
 
 class PredictionResults(BaseModel):
