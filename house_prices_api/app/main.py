@@ -1,9 +1,5 @@
-import sys
 import os
-
-
-# print(sys.path)
-
+import sys
 from typing import Any
 
 from fastapi import APIRouter, FastAPI, Request
