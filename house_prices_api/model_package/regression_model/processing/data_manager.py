@@ -18,7 +18,8 @@ from model_package.regression_model.config.core import TRAINED_MODEL_DIR, config
 
 def engineer_dataset() -> pd.DataFrame:
     # Load data from the specified URL
-    dataframe = pd.read_csv("https://docs.google.com/spreadsheets/d/1l4Ea9PXEXv_GwcIWTORX_oK6TgZds7yTrek-fGLbJq8/gviz/tq?tqx=out:csv&sheet=Housing_in_Eziobodo")
+    url = config.model_config.url
+    dataframe = pd.read_csv(url)
     
     # Extract all unique utilities
     all_utilities = set()
