@@ -4,6 +4,8 @@ import numpy as np
 import pandas as pd
 from fastapi.testclient import TestClient
 
+API_ENDPOINT = "/api/v1/predict"
+
 
 def test_make_prediction(client: TestClient, test_data: pd.DataFrame) -> None:
     # Given
@@ -14,7 +16,7 @@ def test_make_prediction(client: TestClient, test_data: pd.DataFrame) -> None:
 
     # When
     response = client.post(
-        "/api/v1/predict",
+        API_ENDPOINT,
         json=payload,
     )
 
@@ -22,4 +24,4 @@ def test_make_prediction(client: TestClient, test_data: pd.DataFrame) -> None:
     assert response.status_code == 200
     prediction_data = response.json()
     assert prediction_data["predictions"]
-    assert math.isclose(prediction_data["predictions"][0], 143286, rel_tol=1000)
+    assert np.isclose(prediction_data["predictions"][0], 143286, rtol=1000)
