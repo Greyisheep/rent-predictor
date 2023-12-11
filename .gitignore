@@ -144,4 +144,6 @@ packages/ml_api/uploads/*
 =======
 __pycache__
 .ipynb_checkpoints/
->>>>>>> 2e34af9a372479a8c8f1c6e6f5346f0212a9fa88
+
+
+.vscode/
