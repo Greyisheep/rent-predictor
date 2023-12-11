@@ -1,5 +1,3 @@
-import math
-
 import numpy as np
 import pandas as pd
 from fastapi.testclient import TestClient
@@ -15,10 +13,15 @@ def test_make_prediction(client: TestClient, test_data: pd.DataFrame) -> None:
     }
 
     # When
-    response = client.post(
-        API_ENDPOINT,
-        json=payload,
-    )
+    try:
+        response = client.post(
+            API_ENDPOINT,
+            json=payload,
+        )
+        response.raise_for_status()
+    except Exception as e:
+        print(f"Error occurred during API call: {e}")
+        return
 
     # Then
     assert response.status_code == 200

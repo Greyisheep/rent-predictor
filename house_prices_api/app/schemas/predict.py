@@ -19,7 +19,6 @@ class MultipleHouseDataInputs(BaseModel):
             "example": {
                 "inputs": [
                     {
-                        "StrtName": "Saint Nicholas",
                         "Storeys": 3,
                         "Cheaperflrs": "Yes",
                         "LgCond": 3,

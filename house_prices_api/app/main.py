@@ -1,9 +1,6 @@
 import sys
 import os
 
-# Add the regression_model directory to sys.path
-# sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'model_package')))
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 # print(sys.path)
 
@@ -13,6 +10,8 @@ from fastapi import APIRouter, FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse
 from loguru import logger
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from app.api import api_router
 from app.config import settings, setup_app_logging

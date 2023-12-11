@@ -2,9 +2,7 @@ import os
 import sys
 
 # Add the project's root directory to sys.path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..')))
-
-# print(sys.path)
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..')))
 
 
 from pathlib import Path
@@ -67,7 +65,7 @@ def find_config_file() -> Path:
     """Locate the configuration file."""
     if CONFIG_FILE_PATH.is_file():
         return CONFIG_FILE_PATH
-    raise Exception(f"Config not found at {CONFIG_FILE_PATH!r}")
+    raise FileNotFoundError(f"Config not found at {CONFIG_FILE_PATH!r}")
 
 
 def fetch_config_from_yaml(cfg_path: Optional[Path] = None) -> YAML:
