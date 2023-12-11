@@ -10,7 +10,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '.
 from pathlib import Path
 from typing import Dict, List, Optional
 
-from pydantic import BaseModel
+from pydantic import BaseModel, HttpUrl
 from strictyaml import YAML, load
 
 import model_package.regression_model
@@ -39,6 +39,7 @@ class ModelConfig(BaseModel):
     training and feature engineering.
     """
 
+    url: HttpUrl
     target: str
     features: List[str]
     test_size: float
