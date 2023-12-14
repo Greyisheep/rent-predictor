@@ -43,6 +43,7 @@ Make sure you have the following installed on your system:
 
 - [git](https://git-scm.com/downloads) (Distributed Version Control System, and terminal)
 - [VSCode](https://code.visualstudio.com/download) (integrated development environment)
+- [Node.Js](https://nodejs.org/en/download) (JavaScript runtime environment)
 
 
 ### Clone the Repository
@@ -53,7 +54,7 @@ Make sure you have the following installed on your system:
 
 ```bash
 git clone https://github.com/Greyisheep/rent-predictor
-cd rent-predictor
+cd rent-predictor/house_prices_api
 ```
 
 
@@ -86,6 +87,25 @@ source venv/bin/activate
 
 ```bash
 pip install -r requirements.txt
+```
+
+### For the Front-end setup
+7. Navigate to the react-frontend directory
+
+```bash
+cd ../simple_frontend/react-frontend/
+```
+
+## Using npm
+8. Run the following command to install the dependencies:
+```bash
+npm install
+```
+
+## Using yarn
+8. Run the following command to install the dependencies:
+```bash
+yarn install
 ```
 
 ## Data
