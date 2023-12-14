@@ -62,7 +62,7 @@ cd rent-predictor/house_prices_api
 ### Create a Virtual Environment
 
 4. Type `code .` and hit the `enter` button; this takes you to VSCode
-5. In VSCode, press `ctrl` + `;` which opens up a terminal, [navigate to the Git Bash terminal](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git#:~:text=If%20you%20want%20to%20set,be%20opened%20with%20Git%20Bash.)
+5. In VSCode, press `ctrl` + ` which opens up a terminal, [navigate to the Git Bash terminal](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git#:~:text=If%20you%20want%20to%20set,be%20opened%20with%20Git%20Bash.)
 6. Create a Virtual Environment with:
 
 ```bash
