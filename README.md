@@ -1,17 +1,19 @@
 # Rent Predictor
-This project helps people get started with pen source by makin contribution easier, but yet following best prectices as it is a relatable project. Rent predictor looks to help students with apartment serach as it provides search functions as well as easily accessible databases in form of spreadsheets. The model package gives in sights on prices of apartments in different areas to help students get an idea of what apartment prices in differnt areas are helping the student streamline their search location. As the data collection is open-source, it is easily accessible, usable and verifiable by the end users.
+
+Rent Predictor is an open-source project designed to simplify contributions for those new to open source, adhering to best practices while addressing a common and relatable issue—apartment searching for students. The project offers search functionalities and easily accessible databases in the form of spreadsheets. The model package provides insights into apartment prices in different areas, aiding students in streamlining their search locations. The open-source nature of the data collection ensures accessibility, usability, and verifiability for end-users.
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
-2. [Setup](#setup)
-    - [Prerequisites](#prerequisites)
-    - [Project Setup](#project-setup)
-3. [Data](#data)
-4. [Goals](#goals)
-5. [Next Steps](#next-steps)
-6. [Contributing](#contributing)
-7. [Happy Coding!!!](#happy-coding)
+1. [Built with](#built-with)
+2. [License](#license)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [Configuration](#configuration)
+6. [Data](#data)
+7. [Goals](#goals)
+8. [Next Steps](#next-steps)
+9. [Contributing](#contributing)
+10. [Contact Information](#contact-information)
 
 ## Built with
 ![python](https://img.shields.io/badge/python-%232b5b84?logo=python&logoColor=white&link=https%3A%2F%2Fwww.python.org%2F)
@@ -30,7 +32,7 @@ This project helps people get started with pen source by makin contribution easi
 
 ## Installation
 
-Follow these steps to set up and run rent-predictor on your local machine.
+Follow these steps to set up and run Rent Predictor on your local machine.
 
 ### Prerequisites
 
@@ -48,8 +50,8 @@ Make sure you have the following installed on your system:
 
 ### Clone the Repository
 
-1. Open the git bash terminal by searching for it
-2. [Navigate to choice of location for project](https://www.nobledesktop.com/learn/git/command-line-basics#:~:text=Commands%20such%20as%20cd%20are,the%20contents%20of%20a%20folder.)
+1. Open the Git Bash terminal by searching for it
+2. [Navigate to the choice of location for the project](https://www.nobledesktop.com/learn/git/command-line-basics#:~:text=Commands%20such%20as%20cd%20are,the%20contents%20of%20a%20folder.)
 3. Clone the repository with:
 
 ```bash
@@ -57,13 +59,11 @@ git clone https://github.com/Greyisheep/rent-predictor
 cd rent-predictor/house_prices_api
 ```
 
-
 ### Create a Virtual Environment
 
-4. Type `code .` and hit `enter` button; this takes you to vscode
-5. In vscode, press `ctrl` + ` ; which opens up a terminal, [navigate to the gitbash terminal](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git#:~:text=If%20you%20want%20to%20set,be%20opened%20with%20Git%20Bash.)
+4. Type `code .` and hit the `enter` button; this takes you to VSCode
+5. In VSCode, press `ctrl` + `;` which opens up a terminal, [navigate to the Git Bash terminal](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git#:~:text=If%20you%20want%20to%20set,be%20opened%20with%20Git%20Bash.)
 6. Create a Virtual Environment with:
-
 
 ```bash
 python -m venv venv
@@ -96,20 +96,50 @@ pip install -r requirements.txt
 cd ../simple_frontend/react-frontend/
 ```
 
-## Using npm
+### Install the Dependencies
+
+#### Using npm
 8. Run the following command to install the dependencies:
 ```bash
 npm install
 ```
 
-## Using yarn
+#### Using yarn
 8. Run the following command to install the dependencies:
 ```bash
 yarn install
 ```
 
+## Usage
+**To try out functionalities of the API, change the directory into `house_prices_api`**
+
+### Functionalities available:
+- Train the pipeline by running:
+```python
+python model_package/regression_model/train_pipeline.py
+```
+- Start Uvicorn server by running:
+```python
+python app/main.py
+```
+- Test the API by running:
+`pytest`
+- Run all tests, checks and start the Uvicorn server with one command:
+`tox`
+
+**To use the project from the React frontend, navigate to the `react-frontend directory` (Run on a separate terminal, and make sure the API port is running) and follow these commands**
+- Start the frontend app by running:
+```bash
+npm start
+```
+- To try out the frontend, open `http://localhost:3000`
+To get a prediction output: Fill the form, and press the `Submit` button
+
+## Configuration
+This project is ready to use as is, but if you wish to configure it, i.e., adjust some of the variables, data source, etc., navigate to the `config.yml` file in the `house_prices_api/model_package/regression_model/`. This config file is intentionally heavily commented, to aid adjustments and understanding.
+
 ## Data
-If you want your apartment to be displayed in our database. Kindly fill out the following Google form:
+If you want your apartment to be displayed in our database, kindly fill out the following Google form:
 
 [Google Form Link](https://forms.gle/xHqq2mQ4yi1C6sTR8)
 
@@ -123,88 +153,27 @@ The goals of this project are to:
 
 * Create an open-source apartment search and prediction web app for students in Nigeria.
 * Make it easier for students to find affordable apartments that meet their needs.
-* Help students to save money on rent.
+* Help students save money on rent.
 
 ## Next Steps
 
 The next steps for this project are to:
 
-1. Design and integrate a dashboard for good data visualization.
-2. Package the model for production.
-3. Serve and deploy the model via FASTAPI.
-4. Set up continuous integration and deployment pipelines.
-5. Deploy the ML API with containers.
-6. Set up differential testing.
-7. Set up other backend protocols for user authentication, search, etc.
-8. Build a React-based front end for the application.
-9. Conduct full integration testing.
+- Set up continuous integration and deployment pipelines.
+- Deploy the ML API with containers.
+- Set up differential testing.
+- Set up other backend protocols for user authentication, search, etc.
+- Build a React-based front end for the application.
+- Conduct full integration testing.
+- Create tutorial videos and blogs
 
 ## Contributing
 
 We welcome contributions to this project! To contribute, please fork the repo and create a pull request with your changes. Please make sure to test your changes and include a clear and concise description of what your changes do.
 
-## Happy Coding!!!
+## Contact Information
 
-We hope you enjoy working on this project!
-
-
----
-## If you see this, it means you are an awesome person, showing interest in this project. This README.md file is undergoing a reconstruction to keep it up to date, hence its minor discontinuity.
-
-1. **Title and Description:**
-   - Start with a clear and concise title for your project.
-   - Provide a brief description of what your project does.
-
-2. **Table of Contents:**
-   - Include a table of contents to help users quickly navigate through different sections of the README.
-
-3. **Badges:**
-   - Add relevant badges (e.g., build status, version, license) to provide additional information at a glance.
-
-4. **Installation:**
-   - Clearly outline the steps required to install your project. Include dependencies, environment setup, and any other necessary instructions.
-
-5. **Usage:**
-   - Explain how to use your project. Include code examples, command-line instructions, and screenshots if applicable.
-   - Provide a list of features and functionality.
-
-6. **Configuration:**
-   - If your project requires configuration, explain how users can configure it. Include information about configuration files or environment variables.
-
-7. **Contributing:**
-   - Specify guidelines for contributing to your project. Include information about how to report issues, suggest improvements, and submit pull requests.
-   - If you have a code of conduct, mention it in this section.
-
-8. **Testing:**
-   - Provide instructions on how to run tests if applicable.
-   - Include information about the testing framework used.
-
-9. **Documentation:**
-   - Link to any additional documentation, such as API documentation or user manuals.
-
-10. **License:**
-    - Clearly state the license under which your project is distributed. This is important for users and potential contributors to understand the terms under which they can use, modify, and distribute your code.
-
-11. **Acknowledgements:**
-    - Give credit to any third-party libraries, tools, or resources that your project relies on.
-
-12. **FAQ or Troubleshooting:**
-    - Anticipate common questions or issues and address them in this section.
-
-13. **Contact Information:**
-    - Provide a way for users and contributors to get in touch with you.
-
-14. **Changelog:**
-    - Keep a changelog to document the changes made in each version of your project.
-
-15. **Demo or Screenshots:**
-    - Include links to demos or add screenshots to showcase the project.
-
-16. **Example:**
-    - Provide a simple example of how your project can be used.
-
-17. **Dependencies:**
-    - List the major dependencies with their version numbers.
-
-18. **Badge for Build Status:**
-    - If your project has continuous integration, display a badge for the build status (e.g., Travis CI, CircleCI).
+**Reach me on the following platforms:**
+![Gmail](https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white&link=ibeawuchiclaret%40gmail.com)
+![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white&link=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fclaret-ibeawuchi%2F)
+![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?logo=twitter&logoColor=white&link=https%3A%2F%2Ftwitter.com%2FGreyisheepai)
