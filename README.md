@@ -122,8 +122,13 @@ python model_package/regression_model/train_pipeline.py
 ```python
 python app/main.py
 ```
+![README2](https://github.com/Greyisheep/rent-predictor/assets/97015429/f58aa3a6-5b99-44d6-a728-5c124b6b7565)
+
 - Test the API by running:
 `pytest`
+![README3](https://github.com/Greyisheep/rent-predictor/assets/97015429/e6c121e3-fb91-4656-a0e1-0ea47856504b)
+![README4](https://github.com/Greyisheep/rent-predictor/assets/97015429/94b774b4-0c95-43ed-ad7d-27a3bc341260)
+
 - Run all tests, checks and start the Uvicorn server with one command:
 `tox`
 
@@ -132,8 +137,18 @@ python app/main.py
 ```bash
 npm start
 ```
+![READMEnpm](https://github.com/Greyisheep/rent-predictor/assets/97015429/37033b50-e76a-468c-a522-29340fd733db)
+
 - To try out the frontend, open `http://localhost:3000`
 To get a prediction output: Fill the form, and press the `Submit` button
+
+**This can be used as a prediction input:**
+
+![prediction_input](https://github.com/Greyisheep/rent-predictor/assets/97015429/5fb1b0f4-a51d-4fa6-9ee7-594c72fa3168)
+
+**This is the result on the fastapi server:**
+
+![READMEpred](https://github.com/Greyisheep/rent-predictor/assets/97015429/3c0f324b-f019-40df-9a98-124392e3e2b4)
 
 ## Configuration
 This project is ready to use as is, but if you wish to configure it, i.e., adjust some of the variables, data source, etc., navigate to the `config.yml` file in the `house_prices_api/model_package/regression_model/`. This config file is intentionally heavily commented, to aid adjustments and understanding.
