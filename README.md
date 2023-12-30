@@ -181,6 +181,7 @@ The next steps for this project are to:
 - Build a React-based front end for the application.
 - Conduct full integration testing.
 - Create tutorial videos and blogs
+- Expand laterally to handle multiple case scenarios especially for students from other schools
 
 ## Contributing
 
