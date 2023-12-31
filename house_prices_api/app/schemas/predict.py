@@ -7,8 +7,6 @@ from model_package.regression_model.processing.validation import \
 
 
 class PredictionResults(BaseModel):
-    # errors: Optional[Any]
-    # version: str
     predictions: Optional[List[float]]
 
 
