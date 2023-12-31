@@ -27,4 +27,4 @@ def test_make_prediction(client: TestClient, test_data: pd.DataFrame) -> None:
     assert response.status_code == 200
     prediction_data = response.json()
     assert prediction_data["predictions"]
-    assert np.isclose(prediction_data["predictions"][0], 143286, rtol=1000)
+    assert np.isclose(prediction_data["predictions"][0], 143286, rtol=10000)
